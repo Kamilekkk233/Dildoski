@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wibrator – Dildoski 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {margin:0;font-family:'Inter',sans-serif;background:linear-gradient(180deg,#fff5fb 0%,#f5e6ff 100%);color:#2f213a;}
+header {background:linear-gradient(90deg,#ff6fb5,#8b5cf6);color:white;padding:20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;}
+.logo {font-size:24px;font-weight:700;}
+nav a {color:white;text-decoration:none;font-weight:600;margin-left:20px;}
+nav a:hover {text-decoration:underline;}
+main {max-width:800px;margin:40px auto;padding:0 20px;}
+h1,h2 {color:#4c1d95;}
+section {margin-bottom:40px;}
+button {background:#ff6fb5;color:white;border:none;padding:10px 15px;border-radius:8px;cursor:pointer;margin-top:10px;margin-bottom:5px;}
+button:hover {background:#8b5cf6;}
+div.toggle-section {display:none;background:#f9f5fd;padding:15px;border-radius:12px;margin-bottom:10px;}
+a.back {display:inline-block;margin-top:20px;text-decoration:none;color:#4c1d95;font-weight:600;}
+footer {text-align:center;background:#f5e6ff;padding:20px;color:#6b5b6d;font-size:14px;}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Dildoski 🌸</div>
+<nav><a href="Strona.html">Strona główna</a></nav>
+</header>
+<main>
+<section>
+<h1>Wibrator</h1>
+<p>Wibrator to edukacyjna zabawka intymna z funkcją drgań, która pomaga w poznawaniu własnego ciała i komfortowej stymulacji. Występuje w różnych rozmiarach, kształtach i poziomach intensywności drgań.</p>
+<button onclick="toggleInfo('material')">Materiał</button>
+<div id="material" class="toggle-section">
+<p>Wibratory wykonane są z medycznego silikonu lub wysokiej jakości tworzyw sztucznych, bezpiecznych dla skóry i łatwych do czyszczenia.</p>
+</div>
+<button onclick="toggleInfo('instrukcja')">Jak używać</button>
+<div id="instrukcja" class="toggle-section">
+<p>Używaj zgodnie z instrukcją producenta, stosując lubrykanty odpowiednie do materiału zabawki. Zacznij od niskiej intensywności drgań, aby przyzwyczaić ciało.</p>
+</div>
+<button onclick="toggleInfo('czyszczenie')">Czyszczenie i przechowywanie</button>
+<div id="czyszczenie" class="toggle-section">
+<p>Po użyciu dokładnie umyj wibrator wodą z mydłem lub specjalnym środkiem do zabawek intymnych. Przechowuj w suchym i czystym miejscu, z dala od kurzu i światła.</p>
+</div>
+<a class="back" href="Strona.html">Powrót do strony głównej</a>
+</section>
+</main>
+<footer>© 2025 Dildoski 🌸 – Strona edukacyjna dla osób 18+</footer>
+<script>
+function toggleInfo(id) {
+  const el = document.getElementById(id);
+  if(el.style.display === 'none' || el.style.display === '') {
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html>

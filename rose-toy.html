@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rose Toy – Dildoski 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {margin:0;font-family:'Inter',sans-serif;background:linear-gradient(180deg,#fff5fb 0%,#f5e6ff 100%);color:#2f213a;}
+header {background:linear-gradient(90deg,#ff6fb5,#8b5cf6);color:white;padding:20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;}
+.logo {font-size:24px;font-weight:700;}
+nav a {color:white;text-decoration:none;font-weight:600;margin-left:20px;}
+nav a:hover {text-decoration:underline;}
+main {max-width:800px;margin:40px auto;padding:0 20px;}
+h1,h2 {color:#4c1d95;}
+section {margin-bottom:40px;}
+button {background:#ff6fb5;color:white;border:none;padding:10px 15px;border-radius:8px;cursor:pointer;margin-top:10px;margin-bottom:5px;}
+button:hover {background:#8b5cf6;}
+div.toggle-section {display:none;background:#f9f5fd;padding:15px;border-radius:12px;margin-bottom:10px;}
+a.back {display:inline-block;margin-top:20px;text-decoration:none;color:#4c1d95;font-weight:600;}
+footer {text-align:center;background:#f5e6ff;padding:20px;color:#6b5b6d;font-size:14px;}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Dildoski 🌸</div>
+<nav><a href="Strona.html">Strona główna</a></nav>
+</header>
+<main>
+<section>
+<h1>Rose Toy</h1>
+<p>Rose Toy to subtelna, nowoczesna zabawka intymna, zaprojektowana w formie kwiatu. Cicha, elegancka i ergonomiczna, zapewnia komfortową stymulację i przyjemność w bezpieczny sposób.</p>
+<button onclick="toggleInfo('material')">Materiał</button>
+<div id="material" class="toggle-section">
+<p>Wykonana z certyfikowanego silikonu medycznego, hipoalergiczna i delikatna dla skóry. Łatwa do czyszczenia i bezpieczna w użyciu.</p>
+</div>
+<button onclick="toggleInfo('instrukcja')">Jak używać</button>
+<div id="instrukcja" class="toggle-section">
+<p>Używaj zgodnie z instrukcją producenta, stosując lubrykanty odpowiednie do materiału zabawki. Najlepiej rozpocząć od niskiej intensywności drgań.</p>
+</div>
+<button onclick="toggleInfo('czyszczenie')">Czyszczenie i przechowywanie</button>
+<div id="czyszczenie" class="toggle-section">
+<p>Po każdym użyciu myj Rose Toy ciepłą wodą i delikatnym mydłem lub specjalnym środkiem do zabawek intymnych. Przechowuj w suchym, czystym miejscu.</p>
+</div>
+<a class="back" href="Strona.html">Powrót do strony głównej</a>
+</section>
+</main>
+<footer>© 2025 Dildoski 🌸 – Strona edukacyjna dla osób 18+</footer>
+<script>
+function toggleInfo(id) {
+  const el = document.getElementById(id);
+  if(el.style.display === 'none' || el.style.display === '') {
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html>
